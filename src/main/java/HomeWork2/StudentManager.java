@@ -13,26 +13,29 @@ private ArrayList<Student> students ;
  }
 
  public Student getStudentById(int id) {
-  for (Student student : students) {
-   if (student.getId() == id) {
-    return student;
+     for (Student student : students) {
+         if (student.getId() == id) {
+             return student;
+         }
+     }
+     return null;
+ }
+
+ public ArrayList<Student>  getAllStudents() {
+    return students;
+ }
+
+ public boolean removeStudentById(int id){
+   for (Student student : students) {
+    if (student.getId() == id) {
+      students.remove(student);
+      return true;
+    }
    }
+         return false;
+    }
   }
-  throw new IllegalArgumentException("Student with ID " + id + " not found");
- }
 
- public ArrayList<Student> getAllStudents() {
-  return new ArrayList<>(students);
- }
 
- public boolean removeStudentById(int id) {
-  for (int i = 0; i < students.size(); i++) {
-   if (students.get(i).getId() == id) {
-    students.remove(i);
-    return true;
-   }
-  }
-  return false;
- }
 
-}
+
