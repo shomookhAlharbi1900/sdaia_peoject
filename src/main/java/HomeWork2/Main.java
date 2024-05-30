@@ -10,9 +10,8 @@ public class Main {
         studentManager.addStudent(student1);
         studentManager.addStudent(student2);
         studentManager.addStudent(student3);
-
-        Student retrievedStudent = studentManager.getStudentById(1);
-        System.out.println("Retrieved Student by ID: " + retrievedStudent.getName());
+        Student retrievedStd = studentManager.getStudentById(1);
+        System.out.println(" Retrieved Student by ID: " + retrievedStd.getName());
 
         System.out.println("  All students:");
         for (Student student : studentManager.getAllStudents()) {
