@@ -1,0 +1,3 @@
+Rifal,18,Riyadh,201,DATABASE
+Sarah,22,Al Qssim,203,WEB
+Shomookh,24,Al Qssim,200,JAVA
