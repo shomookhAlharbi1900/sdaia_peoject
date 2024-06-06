@@ -8,7 +8,7 @@ public class EmployeeDAO {
     private static final String insertEmployee = "insert into employees values (?,?,?,?,?,?,?,?,?,?)";
     private static final String selectEmployee = "select * from employees where employee_id = ?";
     private static final String selectAllEmployees = " select * from employees " ;
-    private static final String updateEmployee = "update employees set first_name = ? last_name = ? ,where employee_id  = ?";
+    private static final String updateEmployee = "update employees set first_name = ? , last_name = ? where employee_id  = ?";
     private static final String deleteEmployee = "delete from employees where employee_id = ?";
 
     public void insertEmployee(employees e) throws SQLException {
